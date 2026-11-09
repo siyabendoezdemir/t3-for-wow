@@ -11,8 +11,11 @@ Free and open source (MIT). Unofficial: not made, approved or supported by T3 or
 uses **their own** T3 and their own approval. There is no hosted service, shared account, relay,
 telemetry or paid component.
 
-> **Status: 0.9.1 release candidate.** It has been used on one Mac with the real game and its owner's T3. It has not yet been tested on a
-> second person's Mac, and the app is not notarized by Apple. See [Known limits](docs/LIMITS.md).
+> **Status: 0.9.1 release candidate — source only.** No prebuilt app or binary release is currently published.
+> Automated build, safety and integration checks have passed, but this exact candidate has not completed
+> real-user onboarding and sustained real-game acceptance. Earlier development builds were used on one
+> Mac with the real game and its owner's T3. The app is not notarized by Apple.
+> See [Known limits](docs/LIMITS.md).
 
 ## What you need
 
@@ -24,7 +27,10 @@ telemetry or paid component.
 
 Windows, Intel Macs and other WoW flavours are not supported in this release.
 
-## Install (about 10 clicks, one game restart)
+## Installation (when binary releases are available)
+
+No prebuilt releases are available yet. The steps below describe the intended packaged-app flow.
+For now, use [Build and test from source](#build-and-test-from-source).
 
 1. Download `T3ForWoW-mac-<version>.zip` from Releases, open it, and move **T3 for WoW** to Applications.
 2. Open it. macOS blocks apps that are not notarized. Go to **System Settings → Privacy & Security** and
