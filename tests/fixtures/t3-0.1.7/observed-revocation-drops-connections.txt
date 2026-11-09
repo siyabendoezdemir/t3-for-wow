@@ -1,0 +1,1 @@
+pooled connections dropped by the server after revocation: 1

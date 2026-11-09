@@ -1,0 +1,5 @@
+# Reviewed leak-scan matches that are not secrets (rule<TAB>sha10 of the match<TAB>why)
+bearer-token	b365789ef9	T3 WWW-Authenticate header text (resource_metadata parameter), no token
+infra-path	0fe68e7a8a	the scanner's own rule text
+private-host	795b104abe	the scanner's own rule text
+email	fe1c3a2e2a	Blizzard's published public UI contact address (docs/LIMITS.md)

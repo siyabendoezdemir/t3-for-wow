@@ -1,0 +1,5 @@
+credential
+expiresAt
+id
+label
+scopes

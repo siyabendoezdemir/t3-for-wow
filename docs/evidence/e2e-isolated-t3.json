@@ -1,0 +1,102 @@
+{
+  "kind": "SYNTHETIC game process + REAL isolated T3 v0.1.7 + real headless bridge build",
+  "t3Version": "t3 v0.1.7",
+  "gameIntervalOverrideSeconds": 1,
+  "trackerReadySeconds": 1.2,
+  "replyAckSeconds": 1.2,
+  "replyVisibleSeconds": 1.2,
+  "slotsUsedMainPhase": 5,
+  "slotsUsedReshowPhase": 2,
+  "bridgeStatsAfterRestart": {
+    "t3Calls": 3,
+    "t3Errors": 0,
+    "slotWrites": 4,
+    "frames": 9,
+    "requests": 1,
+    "badFrames": 0,
+    "sends": 0
+  },
+  "footprint": "INSTALLED slotsCreated=40 restartNeeded=true folders=41 files=88 bytes=32330",
+  "checks": [
+    {
+      "name": "bridge registers with T3 and produces T3's own approval URL",
+      "ok": true,
+      "detail": "/oauth/mcp/authorize"
+    },
+    {
+      "name": "approval page shows the bridge's self-declared name and loopback redirect host",
+      "ok": true,
+      "detail": "{\"n\":\"T3 for WoW\",\"h\":\"127.0.0.1:51211\"}"
+    },
+    {
+      "name": "bridge completes pairing from the loopback callback",
+      "ok": true,
+      "detail": "APPROVE_URL=<url>\nPAIR_RESULT=approved scope=orchestration:read orchestration:operate expiresIn=2591999\n"
+    },
+    {
+      "name": "grant expires in ~30 days (re-approval needed monthly; no refresh token in T3 0.1.7)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "installer creates addon + 40 slots",
+      "ok": true,
+      "detail": "INSTALLED slotsCreated=40 restartNeeded=true folders=41 files=88 bytes=32330\n"
+    },
+    {
+      "name": "game sees T3 connected through the bridge with tracker data",
+      "ok": true,
+      "detail": "{\"SESSION\":\"1369957432\",\"TRACKER_READY_S\":\"1.2\",\"HEALTH\":\"online/connected\",\"OWNER_THREAD_MODE\":\"full-access\",\"OWNER_THREAD_CANREPLY\":\"false\",\"CEILING_REQ\":\"rejected\",\"CEILING_DETAIL\":\"This thread runs with broader permissions than your WoW link. Reply in T3, or re-approve the link with matching acc"
+    },
+    {
+      "name": "owner's full-access thread is shown as not repliable from an approval-required link",
+      "ok": true,
+      "detail": "full-access/false"
+    },
+    {
+      "name": "reply to it is refused by T3's permission ceiling and explained",
+      "ok": true,
+      "detail": "rejected: This thread runs with broader permissions than your WoW link. Reply in T3, or re-approve the link with matching access."
+    },
+    {
+      "name": "new thread from the game is created in the project",
+      "ok": true,
+      "detail": "accepted/true: Thread created. Using claude-haiku-5-5, like your latest thread in this project."
+    },
+    {
+      "name": "no silent model choice: the new thread names the model it copied from the owner's latest thread",
+      "ok": true,
+      "detail": "Thread created. Using claude-haiku-5-5, like your latest thread in this project."
+    },
+    {
+      "name": "its failed run (no provider in the isolated server) is shown as Failed, not done",
+      "ok": true,
+      "detail": "Failed"
+    },
+    {
+      "name": "typed reply to the selected thread is accepted by T3",
+      "ok": true,
+      "detail": "accepted"
+    },
+    {
+      "name": "the reply appears in the game's history, attributed to WoW",
+      "ok": true,
+      "detail": "true"
+    },
+    {
+      "name": "after a bridge crash the re-shown request is answered from the ledger",
+      "ok": true,
+      "detail": "{\"SESSION\":\"1369957432\",\"TRACKER_READY_S\":\"1.1\",\"HEALTH\":\"online/connected\",\"RESHOW_REQ_ID\":\"4\",\"RESHOW_REQ\":\"accepted\",\"EPOCH\":\"931734500\",\"SLOTS_USED\":\"2\"}"
+    },
+    {
+      "name": "T3 holds exactly one copy of the WoW reply (owner view)",
+      "ok": true,
+      "detail": "copies=1"
+    },
+    {
+      "name": "nothing reached the refused full-access thread",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

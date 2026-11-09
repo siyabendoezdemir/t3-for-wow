@@ -1,0 +1,13 @@
+[
+  {
+    "sessionId": "string",
+    "method": "string",
+    "scopes": "object",
+    "subject": "string",
+    "client": "object",
+    "connected": "boolean",
+    "issuedAt": "string",
+    "expiresAt": "string",
+    "lastConnectedAt": "object"
+  }
+]

@@ -1,0 +1,21 @@
+## Interface: 16001
+## Title: T3 for WoW
+## Notes: See what your own T3 is working on and reply from inside the game. Needs the T3 for WoW app on this Mac.
+## Version: 0.9.1
+## Author: T3 for WoW contributors
+## SavedVariables: T3ForWoWDB
+## IconTexture: Interface\FriendsFrame\StatusIcon-Online
+Core/Bytes.lua
+Core/Text.lua
+Core/Markdown.lua
+Core/Frame.lua
+Core/Delivery.lua
+Core/Budget.lua
+Core/Outbox.lua
+Core/Model.lua
+Core/Transport.lua
+UI/Strip.lua
+UI/Widgets.lua
+UI/Tracker.lua
+UI/Window.lua
+T3ForWoW.lua

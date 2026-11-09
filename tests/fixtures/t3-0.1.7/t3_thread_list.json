@@ -1,0 +1,33 @@
+{
+  "projectId": "d7874697-0d94-49b1-ac22-030fedc8b5a8",
+  "currentThreadId": null,
+  "threads": [
+    {
+      "threadId": "mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d",
+      "projectId": "d7874697-0d94-49b1-ac22-030fedc8b5a8",
+      "title": "Fixture thread",
+      "link": "https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d",
+      "createdBy": "agent",
+      "creationSource": "mcp",
+      "status": "failed",
+      "latestRunId": "run:thread:mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d:ordinal:1",
+      "providerInstanceId": "claudeAgent",
+      "model": "claude-haiku-5-5",
+      "runtimeMode": "approval-required",
+      "interactionMode": "default",
+      "linkedPullRequest": null,
+      "pullRequests": [],
+      "settled": false,
+      "settledAt": null,
+      "snoozed": false,
+      "snoozedUntil": null,
+      "parentThreadId": null,
+      "relationshipToParent": null,
+      "itemCount": 3,
+      "createdAt": "2026-11-08T17:30:08.366Z",
+      "updatedAt": "2026-11-08T17:30:09.432Z"
+    }
+  ],
+  "nextCursor": null,
+  "total": 1
+}

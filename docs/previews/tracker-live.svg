@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="752" height="274" viewBox="-8.0 -8.0 752 274">
+<defs>
+  <linearGradient id="parchment" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#efdcb0"/><stop offset="0.55" stop-color="#e2c896"/><stop offset="1" stop-color="#d2b37c"/></linearGradient>
+  <radialGradient id="vignette" cx="0.5" cy="0.45" r="0.75"><stop offset="0.6" stop-color="#5a3a10" stop-opacity="0"/><stop offset="1" stop-color="#5a3a10" stop-opacity="0.35"/></radialGradient>
+  <linearGradient id="questlog" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2016"/><stop offset="0.5" stop-color="#1b150e"/><stop offset="1" stop-color="#120d08"/></linearGradient>
+  <linearGradient id="divider" x1="0" x2="1"><stop offset="0" stop-color="#7a5320" stop-opacity="0"/><stop offset="0.15" stop-color="#7a5320"/><stop offset="0.85" stop-color="#7a5320"/><stop offset="1" stop-color="#7a5320" stop-opacity="0"/></linearGradient>
+  <linearGradient id="header" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a3820"/><stop offset="0.5" stop-color="#2e2214"/><stop offset="1" stop-color="#1e160c"/></linearGradient>
+  <linearGradient id="selglow" x1="0" x2="1"><stop offset="0" stop-color="currentColor" stop-opacity="0.35"/><stop offset="1" stop-color="currentColor" stop-opacity="0.05"/></linearGradient>
+  <linearGradient id="marble" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#232323"/><stop offset="1" stop-color="#151515"/></linearGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8c8c8c"/><stop offset="0.5" stop-color="#4a4a4a"/><stop offset="1" stop-color="#6a6a6a"/></linearGradient>
+  <linearGradient id="titlebar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3a3a"/><stop offset="1" stop-color="#1a1a1a"/></linearGradient>
+  <radialGradient id="portrait" cx="0.4" cy="0.35" r="0.8"><stop offset="0" stop-color="#5a4a30"/><stop offset="1" stop-color="#1a120a"/></radialGradient>
+  <linearGradient id="redbtn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a51b0b"/><stop offset="0.55" stop-color="#6e0b02"/><stop offset="1" stop-color="#4a0500"/></linearGradient>
+  <linearGradient id="greybtn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4a4a"/><stop offset="1" stop-color="#262626"/></linearGradient>
+  <linearGradient id="thumb" x1="0" x2="1"><stop offset="0" stop-color="#b08a3e"/><stop offset="1" stop-color="#6b5226"/></linearGradient>
+  <linearGradient id="world" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b4a5a"/><stop offset="0.6" stop-color="#2b3324"/><stop offset="1" stop-color="#1b2016"/></linearGradient>
+</defs>
+<rect x="-8.0" y="-8.0" width="752" height="274" fill="url(#world)"/>
+<text x="40.0" y="38.5" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="14" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">T3</tspan></text>
+<text x="40.0" y="38.5" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="14" text-anchor="start" xml:space="preserve"><tspan fill="#ffd100">T3</tspan></text>
+<g opacity="1.0">
+<circle cx="30.0" cy="33.0" r="5.0" fill="#2ecc40" stroke="#000"/>
+</g>
+<text x="60.8" y="36.5" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">1 </tspan><tspan fill="#000">need </tspan><tspan fill="#000">you</tspan><tspan fill="#000">, </tspan><tspan fill="#000">2 </tspan><tspan fill="#000">working</tspan></text>
+<text x="60.8" y="36.5" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve"><tspan fill="#ff8c1a">1 </tspan><tspan fill="#ff8c1a">need </tspan><tspan fill="#ff8c1a">you</tspan><tspan fill="#ffffff">, </tspan><tspan fill="#ffffff">2 </tspan><tspan fill="#ffffff">working</tspan></text>
+<text x="40.0" y="56.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Deploy </tspan><tspan fill="#000">the </tspan><tspan fill="#000">staging </tspan><tspan fill="#000">site</tspan></text>
+<text x="40.0" y="56.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve"><tspan fill="#cccccc">Deploy </tspan><tspan fill="#cccccc">the </tspan><tspan fill="#cccccc">staging </tspan><tspan fill="#cccccc">site</tspan></text>
+<text x="40.0" y="70.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Needs </tspan><tspan fill="#000">you </tspan><tspan fill="#000">· </tspan><tspan fill="#000">Asked </tspan><tspan fill="#000">to </tspan><tspan fill="#000">run </tspan><tspan fill="#000">deploy.sh </tspan><tspan fill="#000">· </tspan><tspan fill="#000">now</tspan></text>
+<text x="40.0" y="70.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve"><tspan fill="#ffffff">Needs </tspan><tspan fill="#ffffff">you </tspan><tspan fill="#ffffff">· </tspan><tspan fill="#ffffff">Asked </tspan><tspan fill="#ffffff">to </tspan><tspan fill="#ffffff">run </tspan><tspan fill="#ffffff">deploy.sh </tspan><tspan fill="#ffffff">· </tspan><tspan fill="#ffffff">now</tspan></text>
+<g opacity="1.0">
+<rect x="32.0" y="48.0" width="6.0" height="6.0" fill="#ff8c1a" fill-opacity="1.0"/>
+</g>
+<text x="40.0" y="84.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Split </tspan><tspan fill="#000">the </tspan><tspan fill="#000">loot </tspan><tspan fill="#000">parser</tspan></text>
+<text x="40.0" y="84.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve"><tspan fill="#cccccc">Split </tspan><tspan fill="#cccccc">the </tspan><tspan fill="#cccccc">loot </tspan><tspan fill="#cccccc">parser</tspan></text>
+<text x="40.0" y="98.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Agent </tspan><tspan fill="#000">working </tspan><tspan fill="#000">· </tspan><tspan fill="#000">Editing </tspan><tspan fill="#000">Lexer.lua </tspan><tspan fill="#000">· </tspan><tspan fill="#000">now</tspan></text>
+<text x="40.0" y="98.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve"><tspan fill="#ffffff">Agent </tspan><tspan fill="#ffffff">working </tspan><tspan fill="#ffffff">· </tspan><tspan fill="#ffffff">Editing </tspan><tspan fill="#ffffff">Lexer.lua </tspan><tspan fill="#ffffff">· </tspan><tspan fill="#ffffff">now</tspan></text>
+<g opacity="1.0">
+<circle cx="33.0" cy="78.0" r="3.0" fill="none" stroke="#2c4660" stroke-width="2.0"/>
+</g>
+<g opacity="1.0">
+<g>
+<path d="M33.0 75.0 A3.0 3.0 0 0 1 36.0 78.0" fill="none" stroke="#7fd0ff" stroke-width="2.0" stroke-linecap="round"/>
+<circle cx="36.0" cy="78.0" r="1.2" fill="#e8f7ff"/>
+<animateTransform attributeName="transform" type="rotate" from="0 33.0 78.0" to="360 33.0 78.0" dur="1.2s" repeatCount="indefinite"/>
+</g>
+</g>
+<text x="40.0" y="112.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Write </tspan><tspan fill="#000">the </tspan><tspan fill="#000">changelog</tspan></text>
+<text x="40.0" y="112.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve"><tspan fill="#cccccc">Write </tspan><tspan fill="#cccccc">the </tspan><tspan fill="#cccccc">changelog</tspan></text>
+<text x="40.0" y="126.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Queued </tspan><tspan fill="#000">· </tspan><tspan fill="#000">now</tspan></text>
+<text x="40.0" y="126.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve"><tspan fill="#ffffff">Queued </tspan><tspan fill="#ffffff">· </tspan><tspan fill="#ffffff">now</tspan></text>
+<g opacity="1.0">
+<rect x="32.0" y="104.0" width="6.0" height="6.0" fill="#66c7ff" fill-opacity="1.0"/>
+</g>
+<text x="40.0" y="140.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Bump </tspan><tspan fill="#000">the </tspan><tspan fill="#000">Interface </tspan><tspan fill="#000">version</tspan></text>
+<text x="40.0" y="140.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve"><tspan fill="#cccccc">Bump </tspan><tspan fill="#cccccc">the </tspan><tspan fill="#cccccc">Interface </tspan><tspan fill="#cccccc">version</tspan></text>
+<text x="40.0" y="154.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Run </tspan><tspan fill="#000">failed </tspan><tspan fill="#000">· </tspan><tspan fill="#000">Build </tspan><tspan fill="#000">step </tspan><tspan fill="#000">exited </tspan><tspan fill="#000">with </tspan><tspan fill="#000">cod…</tspan></text>
+<text x="40.0" y="154.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve"><tspan fill="#ffffff">Run </tspan><tspan fill="#ffffff">failed </tspan><tspan fill="#ffffff">· </tspan><tspan fill="#ffffff">Build </tspan><tspan fill="#ffffff">step </tspan><tspan fill="#ffffff">exited </tspan><tspan fill="#ffffff">with </tspan><tspan fill="#ffffff">cod…</tspan></text>
+<g opacity="1.0">
+<rect x="32.0" y="132.0" width="6.0" height="6.0" fill="#9e9e9e" fill-opacity="1.0"/>
+</g>
+<text x="40.0" y="168.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Fix </tspan><tspan fill="#000">tooltip </tspan><tspan fill="#000">anchoring</tspan></text>
+<text x="40.0" y="168.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve"><tspan fill="#cccccc">Fix </tspan><tspan fill="#cccccc">tooltip </tspan><tspan fill="#cccccc">anchoring</tspan></text>
+<text x="40.0" y="182.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Run </tspan><tspan fill="#000">finished </tspan><tspan fill="#000">· </tspan><tspan fill="#000">Patched </tspan><tspan fill="#000">Tooltip.lua; </tspan><tspan fill="#000">12 </tspan><tspan fill="#000">…</tspan></text>
+<text x="40.0" y="182.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve"><tspan fill="#ffffff">Run </tspan><tspan fill="#ffffff">finished </tspan><tspan fill="#ffffff">· </tspan><tspan fill="#ffffff">Patched </tspan><tspan fill="#ffffff">Tooltip.lua; </tspan><tspan fill="#ffffff">12 </tspan><tspan fill="#ffffff">…</tspan></text>
+<g opacity="1.0">
+<rect x="32.0" y="160.0" width="6.0" height="6.0" fill="#9e9e9e" fill-opacity="1.0"/>
+</g>
+<text x="40.0" y="196.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Release </tspan><tspan fill="#000">checklist</tspan></text>
+<text x="40.0" y="196.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="12" text-anchor="start" xml:space="preserve"><tspan fill="#cccccc">Release </tspan><tspan fill="#cccccc">checklist</tspan></text>
+<text x="40.0" y="210.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve" fill="#000" opacity="0.85" transform="translate(1,1)"><tspan fill="#000">Run </tspan><tspan fill="#000">finished </tspan><tspan fill="#000">· </tspan><tspan fill="#000">5h</tspan></text>
+<text x="40.0" y="210.0" font-family="'Friz Quadrata TT','Palatino Linotype',Georgia,serif" font-size="10" text-anchor="start" xml:space="preserve"><tspan fill="#ffffff">Run </tspan><tspan fill="#ffffff">finished </tspan><tspan fill="#ffffff">· </tspan><tspan fill="#ffffff">5h</tspan></text>
+<g opacity="1.0">
+<rect x="32.0" y="188.0" width="6.0" height="6.0" fill="#9e9e9e" fill-opacity="1.0"/>
+</g>
+<rect x="-8.0" y="238.0" width="752" height="26" fill="#000" fill-opacity="0.8"/>
+<text x="0.0" y="249.0" font-family="Arial,sans-serif" font-size="11" fill="#ff6060" font-weight="bold">SYNTHETIC LAYOUT PREVIEW — real addon frame tree in a test stub; art approximated; NOT an in-game capture</text>
+<text x="0.0" y="261.0" font-family="Arial,sans-serif" font-size="10" fill="#cccccc">Tracker: needs-you first (pulsing header), spinner only on the running thread.</text>
+</svg>

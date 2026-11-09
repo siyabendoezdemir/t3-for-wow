@@ -1,0 +1,3 @@
+threadRuntimeMode=full-access
+sendError=true
+{"_tag":"OrchestratorMcpFailure","code":"runtime_mode_escalation_denied","message":"Child runtime mode full-access is broader than parent mode approval-required."}

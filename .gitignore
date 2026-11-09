@@ -1,0 +1,9 @@
+.build/
+.deps/
+dist/
+node_modules/
+.DS_Store
+*.log
+.env*
+research/
+private/

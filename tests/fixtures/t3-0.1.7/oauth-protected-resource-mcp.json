@@ -1,0 +1,14 @@
+{
+  "resource": "http://127.0.0.1:<port>/mcp",
+  "authorization_servers": [
+    "http://127.0.0.1:<port>"
+  ],
+  "scopes_supported": [
+    "orchestration:read",
+    "orchestration:operate"
+  ],
+  "bearer_methods_supported": [
+    "header"
+  ],
+  "resource_name": "T3 Code"
+}

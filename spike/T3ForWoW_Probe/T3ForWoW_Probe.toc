@@ -1,0 +1,5 @@
+## Interface: 16001
+## Title: T3 probe (transport spike)
+## Notes: Temporary diagnostic for T3 for WoW. Prints T3PROBE lines to your own chat frame only. Remove after the test.
+## SavedVariables: T3ForWoWProbeDB
+Probe.lua

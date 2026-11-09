@@ -1,0 +1,17 @@
+T3 for WoW — read me first
+==========================
+
+1. Move "T3 for WoW" into your Applications folder.
+2. Open it. macOS will say it cannot verify the developer, because this free app is not notarized.
+   Click Done, then go to System Settings > Privacy & Security and click "Open Anyway" (within
+   about an hour), and confirm with your password.
+3. Click "T3" in the menu bar and follow its one next step:
+   Connect T3 (approve on T3's own page) > Install Addon > Check Capture Access > start the game.
+4. In World of Warcraft: Forever, type /t3
+
+You need: an Apple silicon Mac with macOS 14+, World of Warcraft: Forever, and your own T3.
+Nothing is shared with anyone else; see docs/PRIVACY.md in the source.
+
+Full guide (every click and permission, updating, uninstalling): docs/INSTALL.md
+Known limits (finite updates per session, Blizzard's rules, not notarized): docs/LIMITS.md
+Unofficial; not affiliated with T3 or Blizzard. MIT licence (LICENSE.txt).

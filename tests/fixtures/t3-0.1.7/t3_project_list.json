@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": "d7874697-0d94-49b1-ac22-030fedc8b5a8",
+      "title": "Contract Fixture",
+      "workspaceRoot": "<work>/project",
+      "repositoryIdentity": null,
+      "faviconPath": null,
+      "projectIcon": null,
+      "defaultModelSelection": null,
+      "defaultThreadEnvMode": null,
+      "autoPull": false,
+      "scripts": [],
+      "pinnedAt": null,
+      "archivedAt": null,
+      "createdAt": "2026-11-08T17:30:08.118Z",
+      "updatedAt": "2026-11-08T17:30:08.118Z",
+      "deletedAt": null
+    }
+  ],
+  "nextCursor": null
+}

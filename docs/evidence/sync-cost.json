@@ -1,0 +1,35 @@
+[
+  {
+    "charsPerItem" : 1,
+    "historyItemsPerWatched" : 0,
+    "initialSyncBytes" : 3995,
+    "initialSyncSlots" : 1,
+    "largestDeliveryBytes" : 3995,
+    "scenario" : "tracker only, 20 threads",
+    "steadyUpdateBytes" : 254,
+    "threads" : 20,
+    "watchedThreads" : 0
+  },
+  {
+    "charsPerItem" : 600,
+    "historyItemsPerWatched" : 30,
+    "initialSyncBytes" : 29238,
+    "initialSyncSlots" : 1,
+    "largestDeliveryBytes" : 29238,
+    "scenario" : "typical: 60 threads, 1 open conversation, 30 items x 600 chars",
+    "steadyUpdateBytes" : 214,
+    "threads" : 60,
+    "watchedThreads" : 1
+  },
+  {
+    "charsPerItem" : 4000,
+    "historyItemsPerWatched" : 30,
+    "initialSyncBytes" : 269356,
+    "initialSyncSlots" : 5,
+    "largestDeliveryBytes" : 59892,
+    "scenario" : "worst case: 60 threads, 3 conversations, 30 items x 4000 chars",
+    "steadyUpdateBytes" : 432,
+    "threads" : 60,
+    "watchedThreads" : 3
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "threadId": "mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d",
+  "link": "https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d",
+  "projectId": "d7874697-0d94-49b1-ac22-030fedc8b5a8",
+  "modelSelection": {
+    "instanceId": "claudeAgent",
+    "model": "claude-haiku-5-5"
+  },
+  "runId": "run:thread:mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d:ordinal:1",
+  "status": "preparing"
+}

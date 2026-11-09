@@ -1,0 +1,14 @@
+{
+  "client_id": "<redacted>",
+  "client_name": "T3 for WoW (contract test)",
+  "redirect_uris": [
+    "http://127.0.0.1:<port>/t3wow/callback"
+  ],
+  "grant_types": [
+    "authorization_code"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "none"
+}

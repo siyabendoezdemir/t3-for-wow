@@ -1,0 +1,13 @@
+{
+  "clientName": "T3 for WoW (contract test)",
+  "redirectHost": "127.0.0.1:<port>",
+  "environmentHost": "127.0.0.1:<port>",
+  "csrfToken": "Ry19wGy2wlVuEmJt7Y47lA6Ht67VmqRPmt0lxyhcNkw",
+  "oneClickAccess": [
+    "read-only",
+    "approval-required",
+    "auto-accept-edits",
+    "auto",
+    "full-access"
+  ]
+}

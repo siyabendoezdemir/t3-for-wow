@@ -1,0 +1,25 @@
+# Paths included in the public source export (git pathspecs, from the released commit).
+# Anything not listed stays private: internal notes, decision memos, run logs and the original history.
+.gitignore
+LICENSE
+THIRD-PARTY-NOTICES.md
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+SECURITY.md
+VERSION
+addon
+native
+packaging
+scripts
+spike
+tests
+docs/INSTALL.md
+docs/PRIVACY.md
+docs/LIMITS.md
+docs/TESTING.md
+docs/RELEASING.md
+docs/PROTOCOL.md
+docs/DIAGNOSTICS.md
+docs/evidence
+docs/previews

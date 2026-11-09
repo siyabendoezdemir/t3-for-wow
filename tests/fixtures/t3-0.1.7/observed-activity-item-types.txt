@@ -1,0 +1,3 @@
+command_execution
+error
+user_message

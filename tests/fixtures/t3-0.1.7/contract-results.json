@@ -1,0 +1,290 @@
+{
+  "t3Version": "t3 v0.1.7",
+  "results": [
+    {
+      "name": "server prints an owner pairing link on first start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "owner pairing token redeems to a browser session cookie",
+      "ok": true,
+      "detail": "200 {\"authenticated\":true,\"scopes\":[\"orchestration:read\",\"orchestration:operate\",\"terminal:operate\",\"relay:read\",\"access:read\",\"access:write\",\"relay:write\"],\"permissions\":[\"orchestration:read\",\"orchestration:operate\",\"settings:write\",\"providers:manage\",\"environment:maintain\",\"preview:operate\",\"diagn"
+    },
+    {
+      "name": "authorization metadata: code + S256 + public client",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "protected resource names /mcp",
+      "ok": true,
+      "detail": "http://127.0.0.1:41441/mcp"
+    },
+    {
+      "name": "registration rejects non-loopback http redirect",
+      "ok": true,
+      "detail": "400"
+    },
+    {
+      "name": "dynamic registration of a loopback public client",
+      "ok": true,
+      "detail": "201{\"client_id\":\"eyJ2IjoxLCJuIjoiVDMgZm9yIFdvVyAoY29udHJhY3QgdGVzdCkiLCJyIjpbImh0dHA6Ly8xMjcuMC4wLjE6NDcxMjMvdDN3b3cvY2FsbGJhY2siXX0.Jxr2SUAXhkt0qNuPok5f9AiNamU4Cpg5iiJRC52M60g\",\"client_name\":\"T3 for WoW (contract test)\",\"redirect_uris\":[\"http://127.0.0.1:47123/t3wow/callback\"],\"grant_types\":[\"autho"
+    },
+    {
+      "name": "authorize redirects to the T3 approval page",
+      "ok": true,
+      "detail": "/connect-agent?response_type=code&client_id=eyJ2IjoxLCJuIjoiVDMgZm9yIFdvVyAoY29udHJhY3QgdGVzdCkiLCJyIjpbImh0dHA6Ly8xMjcuMC4wLjE6NDcxMjMvdDN3b3cvY2FsbGJhY2siXX0.Jxr2SUAXhkt0qNuPok5f9AiNamU4Cpg5iiJRC52M60g&redirect_uri=http%3A%2F%2F127.0.0.1%3A47123%2Ft3wow%2Fcallback&code_challenge=qGIbCz-KWJkxCbN7yP"
+    },
+    {
+      "name": "owner Deny returns access_denied to the bridge redirect with state",
+      "ok": true,
+      "detail": "{\"redirectTo\":\"http://127.0.0.1:47123/t3wow/callback?error=access_denied&state=mRM7eDEOtpCIbKxw&iss=http%3A%2F%2F127.0.0.1%3A41441\"}"
+    },
+    {
+      "name": "approval page without an owner session offers no one-click approval",
+      "ok": true,
+      "detail": "{\"clientName\":\"T3 for WoW (contract test)\",\"redirectHost\":\"127.0.0.1:47123\",\"environmentHost\":\"127.0.0.1:41441\"}"
+    },
+    {
+      "name": "decision without an owner session is refused",
+      "ok": true,
+      "detail": "400{\"_tag\":\"AuthMcpApprovalError\",\"message\":\"Your session cannot approve this request. Enter a pairing code instead.\"}"
+    },
+    {
+      "name": "approval details list one-click access levels incl. approval-required",
+      "ok": true,
+      "detail": "[\"read-only\",\"approval-required\",\"auto-accept-edits\",\"auto\",\"full-access\"]"
+    },
+    {
+      "name": "owner Approve returns a code + state + iss",
+      "ok": true,
+      "detail": "{\"redirectTo\":\"http://127.0.0.1:47123/t3wow/callback?code=1D23W8EQB4CcJixD0hQjX1etkM957UBcXvQpBXguWx0&state=3V7jiZyCHQVW629x&iss=http%3A%2F%2F127.0.0.1%3A41441\"}"
+    },
+    {
+      "name": "token exchange with the wrong PKCE verifier fails",
+      "ok": true,
+      "detail": "400{\"error\":\"invalid_grant\",\"error_description\":\"The authorization code is invalid or expired.\"}"
+    },
+    {
+      "name": "token exchange returns a Bearer with expiry and scope",
+      "ok": true,
+      "detail": "200{\"access_token\":\"eyJ2IjoxLCJraW5kIjoic2Vzc2lvbiIsInNpZCI6IjExYzVkOGY0LTEzYzEtNGM3Mi1iNGY0LWExZjY1YzdlZTBmOCIsInN1YiI6Im1jcC1jbGllbnQiLCJzY29wZXMiOlsib3JjaGVzdHJhdGlvbjpyZWFkIiwib3JjaGVzdHJhdGlvbjpvcGVyYXRlIl0sIm1ldGhvZCI6ImJlYXJlci1hY2Nlc3MtdG9rZW4iLCJydGMiOiJhcHByb3ZhbC1yZXF1aXJlZCIsImlhdCI6MTc5"
+    },
+    {
+      "name": "token lifetime is 30 days and no refresh token is issued",
+      "ok": true,
+      "detail": "2592000"
+    },
+    {
+      "name": "approval-required access maps to orchestration read+operate only",
+      "ok": true,
+      "detail": "orchestration:read orchestration:operate"
+    },
+    {
+      "name": "authorization code cannot be replayed",
+      "ok": true,
+      "detail": "400"
+    },
+    {
+      "name": "owner can mint a scoped one-time pairing code (read+operate only)",
+      "ok": true,
+      "detail": "credential,expiresAt,id,label,scopes"
+    },
+    {
+      "name": "pairing code approves without a browser session",
+      "ok": true,
+      "detail": "200 {\"redirectTo\":\"http://127.0.0.1:47123/t3wow/callback?code=hVftLjDJwo8NMmYuXSt0nEN2IBNKHlwusV8JuP6ZnoQ&state=uGgKFR2NJaziM36c&iss=http%3A%2F%2F127.0.0.1%3A41441\"}"
+    },
+    {
+      "name": "pairing-code approval yields the same read+operate bearer",
+      "ok": true,
+      "detail": "{\"access_token\":\"eyJ2IjoxLCJraW5kIjoic2Vzc2lvbiIsInNpZCI6ImUzMGMwMjhjLTNjNjAtNDY0ZS1hMTUyLWQ0MDJiMDQ1NDRmOCIsInN1YiI6Im1"
+    },
+    {
+      "name": "a pairing code is single-use",
+      "ok": true,
+      "detail": "400"
+    },
+    {
+      "name": "a read-only pairing code cannot approve operate access",
+      "ok": true,
+      "detail": "400 {\"_tag\":\"AuthMcpApprovalError\",\"message\":\"That pairing code cannot grant this access. It has not been used, so choose an"
+    },
+    {
+      "name": "MCP without a bearer is 401 with a resource-metadata challenge",
+      "ok": true,
+      "detail": "401 Bearer resource_metadata=\"http://127.0.0.1:41441/.well-known/oauth-protected-resource/mcp\""
+    },
+    {
+      "name": "MCP initialize succeeds with the OAuth bearer",
+      "ok": true,
+      "detail": "200{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"protocolVersion\":\"2025-06-18\",\"capabilities\":{\"logging\":{},\"tools\":{\"listChanged\":true},\"completions\":{}},\"serverInfo\":{\"name\":\"T3 Code\",\"version\":\"0.1.7\"}}}\n"
+    },
+    {
+      "name": "tool available to an approval-required client: t3_project_list",
+      "ok": true,
+      "detail": "create_threads,delegate_task,delete_scheduled_task,device_close,device_list,device_open,device_screenshot,html_preview,html_render,link_pull_request,link_pull_requests,list_scheduled_tasks,list_thread_pull_requests,orchestrator_capabilities,preview_act,preview_dialog,preview_evaluate,preview_navigat"
+    },
+    {
+      "name": "tool available to an approval-required client: t3_thread_list",
+      "ok": true,
+      "detail": "create_threads,delegate_task,delete_scheduled_task,device_close,device_list,device_open,device_screenshot,html_preview,html_render,link_pull_request,link_pull_requests,list_scheduled_tasks,list_thread_pull_requests,orchestrator_capabilities,preview_act,preview_dialog,preview_evaluate,preview_navigat"
+    },
+    {
+      "name": "tool available to an approval-required client: t3_thread_read",
+      "ok": true,
+      "detail": "create_threads,delegate_task,delete_scheduled_task,device_close,device_list,device_open,device_screenshot,html_preview,html_render,link_pull_request,link_pull_requests,list_scheduled_tasks,list_thread_pull_requests,orchestrator_capabilities,preview_act,preview_dialog,preview_evaluate,preview_navigat"
+    },
+    {
+      "name": "tool available to an approval-required client: t3_thread_send",
+      "ok": true,
+      "detail": "create_threads,delegate_task,delete_scheduled_task,device_close,device_list,device_open,device_screenshot,html_preview,html_render,link_pull_request,link_pull_requests,list_scheduled_tasks,list_thread_pull_requests,orchestrator_capabilities,preview_act,preview_dialog,preview_evaluate,preview_navigat"
+    },
+    {
+      "name": "tool available to an approval-required client: t3_thread_launch",
+      "ok": true,
+      "detail": "create_threads,delegate_task,delete_scheduled_task,device_close,device_list,device_open,device_screenshot,html_preview,html_render,link_pull_request,link_pull_requests,list_scheduled_tasks,list_thread_pull_requests,orchestrator_capabilities,preview_act,preview_dialog,preview_evaluate,preview_navigat"
+    },
+    {
+      "name": "tool available to an approval-required client: t3_thread_wait",
+      "ok": true,
+      "detail": "create_threads,delegate_task,delete_scheduled_task,device_close,device_list,device_open,device_screenshot,html_preview,html_render,link_pull_request,link_pull_requests,list_scheduled_tasks,list_thread_pull_requests,orchestrator_capabilities,preview_act,preview_dialog,preview_evaluate,preview_navigat"
+    },
+    {
+      "name": "tool available to an approval-required client: t3_pending_request",
+      "ok": true,
+      "detail": "create_threads,delegate_task,delete_scheduled_task,device_close,device_list,device_open,device_screenshot,html_preview,html_render,link_pull_request,link_pull_requests,list_scheduled_tasks,list_thread_pull_requests,orchestrator_capabilities,preview_act,preview_dialog,preview_evaluate,preview_navigat"
+    },
+    {
+      "name": "t3_project_list returns the fixture project with id/title/workspaceRoot",
+      "ok": true,
+      "detail": "{\"projects\":[{\"id\":\"d7874697-0d94-49b1-ac22-030fedc8b5a8\",\"title\":\"Contract Fixture\",\"workspaceRoot\":\"<repo>/.build/iso-contract/project\",\"repositoryIdentity\":null,\"faviconPath\":null,\"projectIcon\":null,\"defaultModelSelection\":null,\"defaultThr"
+    },
+    {
+      "name": "t3_thread_launch creates a thread",
+      "ok": true,
+      "detail": "{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"link\":\"https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"projectId\":\"d7874697-0d94-49b1-ac22-030fedc8b5a8\",\"mod"
+    },
+    {
+      "name": "t3_thread_launch replay with same clientRequestId returns the same thread",
+      "ok": true,
+      "detail": "{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"link\":\"https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"projectId\":\"d7874697-0d94-49b1-ac22-030fedc8b5a8\",\"mod"
+    },
+    {
+      "name": "replayed launch produced exactly one thread",
+      "ok": true,
+      "detail": "[\"Fixture thread\"]"
+    },
+    {
+      "name": "t3_thread_list allProjects works",
+      "ok": true,
+      "detail": "{\"projectId\":null,\"currentThreadId\":null,\"threads\":[{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"projectId\":\"d7874697-0d94-49b1-ac22-030fedc8b5a8\",\"title\":\"Fixture thread\",\"link\":\"https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Ala"
+    },
+    {
+      "name": "t3_thread_wait reports an ended status",
+      "ok": true,
+      "detail": "{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"runId\":\"run:thread:mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d:ordinal:1\",\"status\":\"failed\",\"timedOut\":false}"
+    },
+    {
+      "name": "t3_thread_send accepted",
+      "ok": true,
+      "detail": "{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"link\":\"https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"messageId\":\"message:mcp:client%3A11c5d8f4-13c1-4c72-b4"
+    },
+    {
+      "name": "t3_thread_send replay returns same messageId",
+      "ok": true,
+      "detail": "{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"link\":\"https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"messageId\":\"message:mcp:client%3A11c5d8f4-13c1-4c72-b4"
+    },
+    {
+      "name": "thread history contains the replayed reply exactly once",
+      "ok": true,
+      "detail": "[\"fixture: hello from the contract test\",\"fixture: exactly-once reply\"]"
+    },
+    {
+      "name": "thread read exposes status, itemCount, pendingRequestCount",
+      "ok": true,
+      "detail": "{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"projectId\":\"d7874697-0d94-49b1-ac22-030fedc8b5a8\",\"title\":\"Fixture thread\",\"link\":\"https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f301"
+    },
+    {
+      "name": "activity view returns timeline items with positions",
+      "ok": true,
+      "detail": "{\"thread\":{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"projectId\":\"d7874697-0d94-49b1-ac22-030fedc8b5a8\",\"title\":\"Fixture thread\",\"link\":\"https://app.t3.c"
+    },
+    {
+      "name": "history is pageable (limit + nextPosition/hasMore)",
+      "ok": true,
+      "detail": "{\"thread\":{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"projectId\":\"d7874697-0d94-49b1-ac22-030fedc8b5a8\",\"title\":\"Fixture thread\",\"link\":\"https://app.t3.c"
+    },
+    {
+      "name": "a new clientRequestId sends a distinct message",
+      "ok": true,
+      "detail": "{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"link\":\"https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"messageId\":\"message:mcp:client%3A11c5d8f4-13c1-4c72-b4"
+    },
+    {
+      "name": "send to an unknown thread is an error, not a silent success",
+      "ok": true,
+      "detail": "{\"_tag\":\"OrchestratorMcpFailure\",\"code\":\"thread_not_found\",\"message\":\"Thread thread-does-not-exist was not found.\"}"
+    },
+    {
+      "name": "t3_pending_request list callable by an outside client",
+      "ok": true,
+      "detail": "{\"requestIds\":[]}"
+    },
+    {
+      "name": "read-only access maps to orchestration:read",
+      "ok": true,
+      "detail": "orchestration:read"
+    },
+    {
+      "name": "read-only client cannot send",
+      "ok": true,
+      "detail": "{\"_tag\":\"OrchestratorMcpFailure\",\"code\":\"capability_denied\",\"message\":\"This tool changes the environment, and this MCP client was approved for read-only access.\"}"
+    },
+    {
+      "name": "permission ceiling is enforced or explicitly reported for broader threads",
+      "ok": true,
+      "detail": "full-access / {\"_tag\":\"OrchestratorMcpFailure\",\"code\":\"runtime_mode_escalation_denied\",\"message\":\"Child runtime mode full-access is broader than parent mode approval-required.\"}"
+    },
+    {
+      "name": "full-access approval scope = read+operate+settings:write+source-control:write (disclosed breadth)",
+      "ok": true,
+      "detail": "orchestration:read orchestration:operate settings:write source-control:write"
+    },
+    {
+      "name": "a full-access link CAN reply to a full-access thread (no runtime mode changed)",
+      "ok": true,
+      "detail": "{\"threadId\":\"mcp:f34e86bc-4efa-4742-b278-c511780ae406\",\"link\":\"https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Af34e86bc-4efa-4742-b278-c511780ae406\",\"messageId\":\"message:mcp:cl"
+    },
+    {
+      "name": "the thread's runtime mode is unchanged by the reply",
+      "ok": true,
+      "detail": "full-access"
+    },
+    {
+      "name": "bearer survives a T3 server restart",
+      "ok": true,
+      "detail": "200{\"jsonrpc\":\"2.0\",\"id\":27,\"result\":{\"protocolVersion\":\"2025-06-18\",\"capabilities\":{\"logging\":{},\"tools\":{\"listChanged\":true},\"completions\":{}},\"serverInfo\":{\"name\":\"T3 Code\",\"version\":\"0.1.7\"}}}\n"
+    },
+    {
+      "name": "send idempotency survives a T3 server restart (same messageId)",
+      "ok": true,
+      "detail": "{\"threadId\":\"mcp:launch:81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"link\":\"https://app.t3.codes/threads/cad2cb0d-32c8-471f-bf09-8959441f8d7b/mcp%3Alaunch%3A81ff1aac8d2d6010e10dc4eeab981e3d6e5e9feb1f30106aa34fe8db384a3c5d\",\"messageId\":\"message:mcp:client%3A11c5d8f4-13c1-4c72-b4"
+    },
+    {
+      "name": "still exactly one copy of the replayed reply after restart",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "owner can see the bridge session labelled with its client name",
+      "ok": true,
+      "detail": "[null,\"T3 for WoW (contract test)\",\"T3 for WoW (contract test)\",\"T3 for WoW (contract test)\",\"T3 for WoW (contract test)\"]"
+    },
+    {
+      "name": "revoked bearer is refused with 401",
+      "ok": true,
+      "detail": "401"
+    }
+  ]
+}
